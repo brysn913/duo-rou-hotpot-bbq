@@ -12,6 +12,7 @@
       color: #333;
     }
     h1 {
+      text-align: center;
       color: #b22222;
       margin-bottom: 20px;
     }
@@ -25,7 +26,80 @@
 </head>
 <body>
   <h1>Package Menu</h1>
-  <div class="menu-item"><span>Standard Buffet</span><span>RM39.90</span></div>
-  <div class="menu-item"><span>Premium Buffet</span><span>RM59.90</span></div>
+<section class="pricing-board">
+  <div class="price-item">
+    <span>成人价 Adults</span>
+    <span><del>Rm 69.9</del> <strong>Rm 59.9</strong></span>
+  </div>
+  <div class="price-item">
+    <span>儿童 Kids (90–130cm)</span>
+    <span><del>Rm 39.9</del> <strong>Rm 29.8</strong></span>
+  </div>
+  <div class="price-item">
+    <span>老人 Elderly (60+)</span>
+    <span><del>Rm 49.9</del> <strong>Rm 39.8</strong></span>
+  </div>
+  <div class="price-item">
+    <span>小孩 Kids (<90cm)</span>
+    <span><strong>FREE</strong></span>
+  </div>
+  <div class="note">
+    <p>Food Waste: Rm 10 / 100g</p>
+    <p>Dining Time: 2 hours</p>
+  </div>
+</section>
+<style>
+  .pricing-board {
+  background-color: #fff8f0;
+  padding: 30px;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.pricing-board h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #b22222;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 1.1em;
+  border-bottom: 1px solid #eee;
+}
+
+.price-item del {
+  color: #888;
+  margin-right: 10px;
+}
+
+.price-item strong {
+  color: #d32f2f;
+}
+
+.note {
+  margin-top: 20px;
+  font-size: 0.95em;
+  color: #555;
+  text-align: center;
+}
+
+</style>
+
+<img src="./drive-download-20250904T161421Z-1-001/IMG_8094.JPG" width="600">
+<style>
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
 </body>
+
 </html>
