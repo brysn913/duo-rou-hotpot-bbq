@@ -4,28 +4,92 @@
   <meta charset="UTF-8" />
   <title>Beverages Menu</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Montserrat', sans-serif;
-      padding: 40px;
-      background-color: #fff8f6;
-      color: #333;
-    }
-    h1 {
-      color: #b22222;
-      margin-bottom: 20px;
-    }
-    .menu-item {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 10px;
-      font-size: 1.1em;
-    }
-  </style>
+
 </head>
 <body>
   <h1>Beverages Menu</h1>
-  <div class="menu-item"><span>Standard Buffet</span><span>RM39.90</span></div>
-  <div class="menu-item"><span>Premium Buffet</span><span>RM59.90</span></div>
+    <div class="menu-container">
+    <div class="menu-item">
+      <span>Coca-Cola</span>
+      <span>冷可乐</span>
+    </div>
+    <div class="menu-item">
+      <span>Sprite</span>
+      <span>雪碧</span>
+    </div>
+    <div class="menu-item">
+      <span>Minute Maid Orange Juice</span>
+      <span>橙汁</span>
+    </div>
+    <div class="menu-item">
+      <span>Minute Maid Apple Juice</span>
+      <span>苹果汁</span>
+    </div>
+    <div class="menu-item">
+      <span>Fanta Grape</span>
+      <span>葡萄芬达</span>
+    </div>
+    <div class="menu-item">
+      <span>Coca-Cola Zero Sugar</span>
+      <span>零糖可乐</span>
+    </div>
+  </div>
+  <style>
+    body {
+  font-family: 'Montserrat', sans-serif;
+  padding: 40px;
+  background-color: #fff8f6;
+  color: #2d2222;
+}
+
+h1 {
+  font-size: 2em;
+  color: #b22222;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.menu-container {
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.menu-item span:last-child {
+  color: #555;
+  font-style: italic;
+}
+
+  </style>
+
+<div>
+<img src="./drive-download-20250904T161421Z-1-001/IMG_8115.JPG" width="600">
+<img src="./drive-download-20250904T161421Z-1-001/IMG_8116.JPG" width="600">
+</div>
+<style>
+ .image-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* space between images */
+  margin-top: 20px;
+  flex-wrap: wrap; /* allows stacking on smaller screens */
+}
+
+.image-row img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+</style>
 </body>
 </html>
