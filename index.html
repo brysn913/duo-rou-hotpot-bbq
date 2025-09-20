@@ -2,85 +2,139 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Sides Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Duo Rou Hot Pot BBQ Buffet</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
     body {
       font-family: 'Montserrat', sans-serif;
-      padding: 40px;
-      background-color: #fff8f6;
+      background-color: #fdfdfd;
       color: #333;
     }
-    h1 {
-      color: #b22222;
-      margin-bottom: 20px;
+    header {
+      background: linear-gradient(to right, #030c1a, #ff6347);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
     }
-    h2 {
-        color: #b22222;
-        margin-bottom: 20px;
-        font-size: 30px;
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2em;
+      opacity: 0.9;
+    }
+    .address {
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 1em;
+      border-bottom: 1px solid #eee;
+    }
+    .menu-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .menu-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+    .menu-card:hover {
+      transform: translateY(-5px);
+    }
+    .menu-card h2 {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      color: #b22222;
     }
     .menu-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-    padding: 15px 20px;
-    font-size: 1.2em;
-    background-color: #fff;
-    border: 2px solid #b22222;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.menu-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-}
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      font-size: 1em;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
   </style>
 </head>
 <body>
-  <h1>Vegetables Menu 菜</h1>
-  <div class="menu-item"><span>King oyster mushroom 杏鲍菇</span><span>free</span></div>
-  <div class="menu-item"><span>Enoki Mushroom 金针菇</span><span>free</span></div>
-  <div class="menu-item"><span>Shiitake Mushroom 冬菇</span><span>free</span></div>
-  <div class="menu-item"><span>Baby cabbage 娃娃菜</span><span>free</span></div>
-  <div class="menu-item"><span>Lettuce 油麦菜</span><span>free</span></div>
-  <div class="menu-item"><span>Spinac 菠菜</span><span>free</span></div>
-  <div class="menu-item"><span>Cabage 包菜</span><span>free</span></div>
-  <div class="menu-item"><span>Lettuce 油麦菜</span><span>free</span></div>
-  <div class="menu-item"><span>Lettuce 油麦菜</span><span>free</span></div>
-  <div class="menu-item"><span>Lettuce 油麦菜</span><span>free</span></div>
-  <div class="menu-item"><span>Bell Roll 响铃卷</span><span>free</span></div>
-  <div class="menu-item"><span>Yuba 腐竹</span><span>free</span></div>
-  <div class="menu-item"><span>Vit's Instant Noodles 唯一面</span><span>free</span></div>
-  <div class="menu-item"><span>Spinach Noodles 菠菜面</span><span>free</span></div>
-  <div class="menu-item"><span>Carrot Noodles 胡萝卜面</span><span>free</span></div>
-  <div class="menu-item"><span>Eggs 鸡蛋 （生）</span><span>free</span></div>
-  <div class="menu-item"><span>Eggs 鸡蛋 (熟)</span><span>free</span></div>
-  <div class="menu-item"><span>Broad Noodles 宽粉</span><span>free</span></div>
-  <div class="menu-item"><span>Rice Noodles 米粉/span><span>free</span></div>
-  <div class="menu-item"><span>Beancurd Skin 豆皮</span><span>free</span></div>
-  <div class="menu-item"><span>Potato Slices 土豆片</span><span>free</span></div>
-  <div class="menu-item"><span>Radish Slices 白萝卜片</span><span>free</span></div>
-  <div class="menu-item"><span>Corn 玉米</span><span>free</span></div>
-  <div class="menu-item"><span>Tofu 豆腐</span><span>free</span></div>
-  <div class="menu-item"><span>Seaweed 海带</span><span>free</span></div>
-  <div class="menu-item"><span>Fishcake 鱼饼</span><span>free</span></div>
-  <div class="menu-item"><span>Meatballs 肉丸</span><span>free</span></div>
-  <div class="menu-item"><span>Fishballs 鱼丸</span><span>free</span></div>
-  <div class="menu-item"><span>Crab Stick 蟹柳棒</span><span>free</span></div>
-  <div class="menu-item"><span>Sausage 香肠</span><span>free</span></div>
-  <h2>Seasonings 调味料</h2>
-  <div class="menu-item"><span>XiaoMi Pepper 小米辣</span><span>free</span></div>
-  <div class="menu-item"><span>Coriander 香菜</span><span>free</span></div>
-  <div class="menu-item"><span>Light Soy Sauce 生抽</span><span>free</span></div>
-  <div class="menu-item"><span>Garlic Cloves 蒜米</span><span>free</span></div>
-  <div class="menu-item"><span>Chopped Green Onion 葱花</span><span>free</span></div>
-  <div class="menu-item"><span>Secret Garlic Sauce 秘制蒜蓉酱</span><span>free</span></div>
-  <div class="menu-item"><span>Seasame Oil 香油</span><span>free</span></div>
-  <div class="menu-item"><span>Chinkiang Vinegar 陈醋</span><span>free</span></div>
-  <div class="menu-item"><span>Oyster Sauce 蚝油</span><span>free</span></div>
+  <header>
+    <h1>Duo Rou Hot Pot BBQ Buffet</h1>
+    <p>多肉自助火锅烤肉 · Cheras LeisureMall</p>
+<div class="image-row">
+  <img src="./drive-download-20250904T161421Z-1-001/IMG_8094.JPG" width="300">
+  <img src="./drive-download-20250904T161421Z-1-001/IMG_8096.JPG" width="300">
+  <img src="./drive-download-20250904T161421Z-1-001/IMG_8097.JPG" width="300">
+</div>
+
+
+</style>
+  </header>
+
+  <section class="address">
+    <strong>Address:</strong><br />
+    L2-66 & 67, 2nd Floor, Leisure Mall Complex,<br />
+    Jalan Manis 6, Taman Bukit Segar,<br />
+    56100 Kuala Lumpur, Federal Territory of Kuala Lumpur
+  </section>
+
+  <section class="menu-section">
+    <a href="package.html">
+      <div class="menu-card">
+        <h2>Package</h2>
+        <div class="menu-item"><span>配套</span><span></span></div>
+      </div>
+    </a>
+    <a href="hotpot.html">
+      <div class="menu-card">
+        <h2>Hot Pot Selection</h2>
+        <div class="menu-item"><span>锅底</span><span></span></div>
+      </div>
+    </a>
+    <a href="bbq.html">
+      <div class="menu-card">
+        <h2>BBQ Meats</h2>
+        <div class="menu-item"><span>肉类</span><span></span></div>
+      </div>
+    </a>
+    <a href="sides.html">
+      <div class="menu-card">
+        <h2>Vegetables & Sides</h2>
+        <div class="menu-item"><span>菜 & 调味料</span><span></span></div>
+      </div>
+    </a>
+    <a href="beverages.html">
+      <div class="menu-card">
+        <h2>Beverages</h2>
+        <div class="menu-item"><span>饮料</span><span></span></div>
+      </div>
+    </a>
+  </section>
+
+  <footer>
+    &copy; 2025 Duo Rou Hot Pot BBQ Buffet 多肉自助火锅烤肉
+  </footer>
 </body>
 </html>
